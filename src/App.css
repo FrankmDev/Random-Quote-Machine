@@ -2,45 +2,63 @@
   border: 1px solid white;
   border-radius: 25px;
   padding: 5rem;
+  max-width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #quote-box {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 2.2rem;
+  width: 100%;
+  position: relative;
+  padding: 3rem;
 }
+
 .icon {
-  font-size: 2rem;
+  font-size: 10rem;
 }
+
 #quote-text {
   margin: 2rem;
   display: flex;
-  gap: 1rem;
+  gap: 2.5rem;
   align-items: center;
+  width: 100%;
+  overflow-wrap: break-word;
 }
+
 #text {
   font-size: 2.2rem;
 }
+
 #quote-author {
   width: 100%;
   text-align: right;
 }
+
 #author {
   font-size: 1.5rem;
   font-style: italic;
 }
+
 #buttons {
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  margin-bottom: -5rem;
+  margin-top: 1rem;
 }
+
 #tweet-quote {
   font-size: 3rem;
   color: #fff;
 }
+
 #new-quote {
   padding: 1.2rem;
   border: none;
