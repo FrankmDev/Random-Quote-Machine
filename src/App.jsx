@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import "./App.css";
 import { FaQuoteLeft } from "react-icons/fa";
 import { FaQuoteRight } from "react-icons/fa";
@@ -16,14 +17,14 @@ function App() {
     <main id="container">
       <section id="quote-box">
         <div id="quote-text">
-          <FaQuoteLeft />
+          <FaQuoteLeft className="icon" />
           <span id="text">
             Life isn’t about getting and having, it’s about giving and being.
           </span>
-          <FaQuoteRight />
+          <FaQuoteRight className="icon" />
         </div>
         <div id="quote-author">
-          <p id="author">Kevin Kruse</p>
+          <span id="author">Kevin Kruse</span>
         </div>
         <div id="buttons">
           <a href="#" id="tweet-quote">
