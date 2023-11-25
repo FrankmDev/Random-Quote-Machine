@@ -23,14 +23,17 @@ function App() {
       <section id="quote-box">
         <div id="quote-text">
           <FaQuoteLeft className="icon" />
-          <span id="text">{getRandomQuote().quote}</span>
+          <span id="text">{quote.quote}</span>
           <FaQuoteRight className="icon" />
         </div>
         <div id="quote-author">
-          <span id="author">{getRandomQuote().author}</span>
+          <span id="author">{quote.author}</span>
         </div>
         <div id="buttons">
-          <a href="#" id="tweet-quote">
+          <a
+            href={`https://twitter.com/intent/tweet?text=${quote.quote} - ${quote.author}`}
+            id="tweet-quote"
+          >
             <FaTwitter />
           </a>
           <button id="new-quote" onClick={handleQuote}>
